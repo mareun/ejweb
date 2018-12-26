@@ -1,0 +1,24 @@
+{
+  "name": "ejweb",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mareun/ejweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mareun/ejweb/issues"
+  },
+  "homepage": "https://github.com/mareun/ejweb#readme",
+  "keywords": [],
+  "description": ""
+}
