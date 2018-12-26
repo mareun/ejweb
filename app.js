@@ -1,11 +1,5 @@
-var http = require('http');
+var express = require('express');
+var app = module.exports = express();
 
-var hostname = '127.0.0.1';
-port = 3000;
-
-http.createServer(function(req, res){
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-}).listen(port, hostname);
-
-console.log('Server running a t http://'+hostname+':'+port);
+var logincontroller = require('./controller/logincontroller');
+var bodyParser = require('body-parser');
