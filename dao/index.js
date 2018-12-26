@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
 						port: 3306,
                         user: 'root',
                         password: 'dmswl0426!',
-                        database: 'ejdb'
+                        database: 'jungedbinstance'
                         });
 
 connection.connect();
