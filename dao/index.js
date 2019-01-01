@@ -11,15 +11,10 @@ var connection = mysql.createConnection({
                         database: 'jungedbinstance'
                         });
 
-connection.connect();
-
-connection.query('SELECT * from Persons', function(err, rows, fields){
-    if (!err)
-    console.log('The solution is: ', rows);
-    else
-    console.log('Error while performing Query.', err);
-
-});
-
-connection.end();
-//??
+exports.login = function(id, pw, callback){
+    connection.query('SELECT * FROM jungedbinstance.users_table where user_id = ? AND user pw = ?'
+    , [id, pw], function(error, result, fields){
+        console.log(result);
+        callback(error, result);
+    })
+}
